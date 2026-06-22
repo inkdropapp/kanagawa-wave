@@ -1,0 +1,268 @@
+/*
+ * Kanagawa Wave — semantic UI overrides for Inkdrop v6.
+ *
+ * Maps the variables declared in ui.css to the Kanagawa Wave palette defined in
+ * palette.css. This is a dark-only theme, so values are assigned directly
+ * (no light-dark()). Surfaces follow the kanagawa.nvim depth model: the editor
+ * sits on the lightest ground (sumiInk3) while the surrounding chrome and floats
+ * recede into the darker sumi inks.
+ */
+
+:root {
+  /*-------------------
+    Brand Colors
+  --------------------*/
+  --primary-color: hsl(var(--kanagawa-crystalBlue));
+  --secondary-color: hsl(var(--kanagawa-springViolet1));
+  --light-primary-color: hsl(var(--kanagawa-springBlue));
+  --light-secondary-color: hsl(var(--kanagawa-fujiGray));
+
+  /*-------------------
+    Form Input
+  --------------------*/
+  --input-background: hsl(var(--kanagawa-sumiInk0));
+  --input-color: hsl(var(--kanagawa-fujiWhite) / 90%);
+  --input-placeholder-color: hsl(var(--kanagawa-fujiGray) / 60%);
+  --input-placeholder-focus-color: hsl(var(--kanagawa-oldWhite) / 60%);
+
+  /*-------------------
+    Focused Input
+  --------------------*/
+  --focused-form-border-color: hsl(var(--kanagawa-crystalBlue) / 70%);
+  --focused-form-muted-border-color: hsl(var(--kanagawa-crystalBlue) / 50%);
+  --focused-outline-color: hsl(var(--kanagawa-crystalBlue) / 30%);
+
+  /*-------------------
+    Page
+  --------------------*/
+  --page-background: hsl(var(--kanagawa-sumiInk0));
+  --text-color: hsl(var(--kanagawa-fujiWhite) / 90%);
+
+  /*-------------------
+    Links
+  --------------------*/
+  --link-color: hsl(var(--kanagawa-crystalBlue));
+  --link-hover-color: hsl(var(--kanagawa-springBlue));
+
+  /*-------------------
+    Highlighted Text
+  --------------------*/
+  --highlight-background: hsl(var(--kanagawa-waveBlue2));
+  --highlight-color: hsl(var(--kanagawa-fujiWhite));
+  --input-highlight-background: hsl(var(--kanagawa-waveBlue1));
+  --input-highlight-color: hsl(var(--kanagawa-fujiWhite));
+
+  /*-------------------
+    Loader
+  --------------------*/
+  --loader-line-color: hsl(var(--kanagawa-fujiGray));
+
+  /*-------------------
+    Site Colors (tags / colored labels)
+  --------------------*/
+  --red: hsl(var(--kanagawa-autumnRed));
+  --orange: hsl(var(--kanagawa-surimiOrange));
+  --yellow: hsl(var(--kanagawa-carpYellow));
+  --olive: hsl(var(--kanagawa-springGreen));
+  --green: hsl(var(--kanagawa-springGreen));
+  --teal: hsl(var(--kanagawa-waveAqua2));
+  --blue: hsl(var(--kanagawa-crystalBlue));
+  --violet: hsl(var(--kanagawa-oniViolet));
+  --purple: hsl(var(--kanagawa-oniViolet));
+  --pink: hsl(var(--kanagawa-sakuraPink));
+  --brown: hsl(var(--kanagawa-boatYellow1));
+  --grey: hsl(var(--kanagawa-fujiGray));
+
+  /*-------------------
+    Emotive Colors
+  --------------------*/
+  --positive-color: hsl(var(--kanagawa-springGreen));
+  --negative-color: hsl(var(--kanagawa-autumnRed));
+  --info-color: hsl(var(--kanagawa-springBlue));
+  --warning-color: hsl(var(--kanagawa-roninYellow));
+
+  /*-------------------
+    Neutral Text
+  --------------------*/
+  --dark-text-color: hsl(var(--kanagawa-fujiWhite) / 90%);
+  --muted-text-color: hsl(var(--kanagawa-oldWhite) / 70%);
+  --light-text-color: hsl(var(--kanagawa-fujiGray) / 90%);
+  --unselected-text-color: hsl(var(--kanagawa-springViolet1) / 80%);
+  --hovered-text-color: hsl(var(--kanagawa-fujiWhite) / 95%);
+  --selected-text-color: hsl(var(--kanagawa-fujiWhite));
+
+  /*-------------------
+    Borders
+  --------------------*/
+  --border-color: hsl(var(--kanagawa-sumiInk6) / 40%);
+  --strong-border-color: hsl(var(--kanagawa-sumiInk6) / 60%);
+  --internal-border-color: hsl(var(--kanagawa-sumiInk6) / 30%);
+  --selected-border-color: hsl(var(--kanagawa-sumiInk6) / 80%);
+  --solid-border-color: hsl(var(--kanagawa-sumiInk5));
+  --solid-internal-border-color: hsl(var(--kanagawa-sumiInk4));
+  --solid-selected-border-color: hsl(var(--kanagawa-sumiInk6));
+
+  /*-------------------
+    Button
+  --------------------*/
+  --button-background: hsl(var(--kanagawa-sumiInk4)) none;
+  --button-text-color: hsl(var(--kanagawa-fujiWhite) / 75%);
+  --button-hover-background-color: hsl(var(--kanagawa-sumiInk5));
+  --button-down-background-color: hsl(var(--kanagawa-sumiInk5));
+  --button-active-background-color: hsl(var(--kanagawa-sumiInk5));
+  --basic-button-hover-background: hsl(var(--kanagawa-sumiInk4) / 60%);
+
+  /*-------------------
+    Elements
+  --------------------*/
+  --kbd-background: hsl(var(--kanagawa-sumiInk4));
+  --mark-background-color: hsl(var(--kanagawa-carpYellow) / 22%);
+  --mark-border-color: hsl(var(--kanagawa-carpYellow) / 40%);
+  --mark-color: hsl(var(--kanagawa-fujiWhite));
+
+  /*-------------------
+    Header
+  --------------------*/
+  --header-text-color: hsl(var(--kanagawa-carpYellow));
+
+  /*-------------------
+    Input
+  --------------------*/
+  --input-focus-border-color: hsl(var(--kanagawa-crystalBlue));
+
+  /*-------------------
+    Segment
+  --------------------*/
+  --segment-background: hsl(var(--kanagawa-sumiInk2));
+  --secondary-segment-background: hsl(var(--kanagawa-sumiInk4) / 60%);
+  --grouped-segment-hover-background: hsl(var(--kanagawa-sumiInk4) / 80%);
+  --piled-segments-background: hsl(var(--kanagawa-sumiInk2));
+
+  /*-------------------
+    Form
+  --------------------*/
+  --form-select-background: hsl(var(--kanagawa-sumiInk0));
+  --form-prompt-background: hsl(var(--kanagawa-sumiInk4));
+
+  /*-------------------
+    Menu
+  --------------------*/
+  --menu-background: hsl(var(--kanagawa-sumiInk0));
+  --vertical-menu-background: hsl(var(--kanagawa-sumiInk0) / 70%);
+  --tabular-menu-active-background: none hsl(var(--kanagawa-sumiInk4));
+
+  /*-------------------
+    Message
+  --------------------*/
+  --message-background: hsl(var(--kanagawa-sumiInk4) / 50%);
+
+  /*-------------------
+    Popup
+  --------------------*/
+  --popup-background: hsl(var(--kanagawa-sumiInk0));
+
+  /*-------------------
+    Table
+  --------------------*/
+  --table-header-background: hsl(var(--kanagawa-sumiInk4) / 40%);
+
+  /*-------------------
+    Checkbox
+  --------------------*/
+  --checkbox-background: hsl(var(--kanagawa-sumiInk4));
+  --checkbox-pressed-background: hsl(var(--kanagawa-sumiInk2));
+  --checkbox-focus-background: hsl(var(--kanagawa-sumiInk5));
+
+  /*-------------------
+    Dropdown
+  --------------------*/
+  --dropdown-menu-background: hsl(var(--kanagawa-sumiInk0));
+  --inline-dropdown-menu-background: hsl(var(--kanagawa-sumiInk0) / 70%);
+
+  /*-------------------
+    Modal
+  --------------------*/
+  --modal-box-header-background: hsl(var(--kanagawa-sumiInk4));
+  --modal-box-content-background: hsl(var(--kanagawa-sumiInk3));
+  --modal-box-actions-background: hsl(var(--kanagawa-sumiInk3));
+
+  /*-------------------
+    Side Bar
+  --------------------*/
+  --sidebar-background: hsl(var(--kanagawa-sumiInk1));
+  --sidebar-border-right: 1px solid hsl(var(--kanagawa-sumiInk4));
+  --sidebar-menu-item-inactive-background: hsl(
+    var(--kanagawa-crystalBlue) / 20%
+  );
+  --sidebar-menu-item-active-background: hsl(var(--kanagawa-waveBlue2) / 60%);
+  --sidebar-menu-section-color: hsl(var(--kanagawa-springViolet1) / 80%);
+  --sidebar-menu-item-color: hsl(var(--kanagawa-oldWhite) / 80%);
+  --sidebar-menu-active-item-color: hsl(var(--kanagawa-fujiWhite));
+  --sidebar-sync-status-view-background: hsl(var(--kanagawa-sumiInk4) / 40%);
+  --sidebar-sync-status-view-text-color: hsl(var(--kanagawa-oldWhite) / 70%);
+  --sidebar-sync-status-view-border-top: 1px solid hsl(var(--kanagawa-sumiInk4));
+
+  /*-------------------
+    Note List Bar
+  --------------------*/
+  --note-list-bar-background: hsl(var(--kanagawa-sumiInk2));
+  --note-list-bar-border-right: 1px solid hsl(var(--kanagawa-sumiInk4) / 75%);
+  --note-list-view-item-header-color: hsl(var(--kanagawa-fujiWhite));
+  --note-list-view-item-color: hsl(var(--kanagawa-oldWhite) / 70%);
+  --note-list-view-item-separator-border: 1px solid
+    hsl(var(--kanagawa-sumiInk4) / 60%);
+  --note-list-view-item-date-color: hsl(var(--kanagawa-springViolet1));
+  --note-list-view-item-selected-background: hsl(
+    var(--kanagawa-waveBlue1) / 70%
+  );
+  --note-list-view-item-active-background: hsl(var(--kanagawa-waveBlue2) / 80%);
+  --note-search-bar-input-background: hsl(var(--kanagawa-sumiInk0));
+
+  /*-------------------
+    Editor
+  --------------------*/
+  --editor-background: hsl(var(--kanagawa-sumiInk3));
+  --editor-floating-actions-background: hsl(var(--kanagawa-sumiInk3) / 70%);
+  --editor-drawer-background: hsl(var(--kanagawa-sumiInk1) / 70%);
+
+  /*-------------------
+    Header Note Menu
+  --------------------*/
+  --header-note-menu-color: hsl(var(--kanagawa-fujiGray) / 90%);
+
+  /*-------------------
+    Notifications
+  --------------------*/
+  --notification-item-background: hsl(var(--kanagawa-sumiInk0) / 80%);
+
+  /*-------------------
+    Preferences
+  --------------------*/
+  --preferences-sidebar-background: hsl(var(--kanagawa-sumiInk0));
+  --preferences-view-background: hsl(var(--kanagawa-sumiInk3));
+
+  /*-------------------
+    Note Status
+  --------------------*/
+  --note-status-active: hsl(var(--kanagawa-oldWhite));
+  --note-status-onhold: hsl(var(--kanagawa-roninYellow));
+  --note-status-completed: hsl(var(--kanagawa-springGreen));
+  --note-status-dropped: hsl(var(--kanagawa-autumnRed));
+}
+
+/*-------------------
+  Acrylic background window
+--------------------*/
+
+:root:has(body.acrylic-window) {
+  --page-background: transparent;
+  --sidebar-background: hsl(var(--kanagawa-sumiInk1) / 50%);
+  --note-list-bar-background: hsl(var(--kanagawa-sumiInk2) / 70%);
+  --editor-background: hsl(var(--kanagawa-sumiInk3) / 90%);
+  --inline-dropdown-menu-background: hsl(var(--kanagawa-sumiInk1));
+  --vertical-menu-background: hsl(var(--kanagawa-sumiInk1));
+}
+
+:root:has(body.acrylic-window.platform-win32) {
+  --page-background: hsl(var(--kanagawa-sumiInk0) / 40%);
+}
