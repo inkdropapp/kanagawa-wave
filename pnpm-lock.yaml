@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@inkdropapp/theme-dev-helpers':
-        specifier: ^0.6.0
-        version: 0.6.0
+        specifier: ^0.6.1
+        version: 0.6.1
 
 packages:
 
@@ -26,11 +26,11 @@ packages:
   '@inkdropapp/base-ui-theme@0.7.6':
     resolution: {integrity: sha512-64TnsgSbF81b3X7eZ3qltW7doG7znnjrDOU2Nv7UWoDL9G+B0CFWR9JDdtOOGOKIYccY0mXfq2F0QfWOxf74uA==}
 
-  '@inkdropapp/css@0.8.1':
-    resolution: {integrity: sha512-0NdZHFhVnPR2+zOI9mCLMVeCiiBE+ktl5t4ihNtOLzGbk9PFlHpJotFif2ggJd8GgfYE7aaMX04Yky37piyLKQ==}
+  '@inkdropapp/css@0.9.0':
+    resolution: {integrity: sha512-6gaOvCS1vSH3lxhq5mvUo4uywEfp7rcnlmjG8haoUYgQoeN6lRew7Dz64XvGOs7PtbNw5Yydi6zX8VW7c2B6IQ==}
 
-  '@inkdropapp/theme-dev-helpers@0.6.0':
-    resolution: {integrity: sha512-E351epwc/lmbEvvhYtbQWVjJPLDW+XirdOFCF6l4a+n692/fQIf8WFYEXCS1evKbcLFR48KZSugNBH4NpJquBw==}
+  '@inkdropapp/theme-dev-helpers@0.6.1':
+    resolution: {integrity: sha512-cfRHNacGvgN0O7SmijhD/9klkaN34mcSOhR4dDfnLF9Q4QAc8Pt80kYoRI7nwzqp3xloDXab9VVz5u7PtAiB1w==}
     engines: {node: '>=24'}
     hasBin: true
 
@@ -347,15 +347,15 @@ packages:
     peerDependencies:
       react: ^19.2.7
 
-  react-router-dom@7.18.0:
-    resolution: {integrity: sha512-Fi0yY6kgtKae/Th2xibdWK0KSdYZ4B53Gyf6wRtomOKWgpNm7H7+DyfDhncdz9FKbpS+1jmDhg3F4WoGJ+yFOA==}
+  react-router-dom@7.18.1:
+    resolution: {integrity: sha512-KaZh+X/6UtEp28x51AUYZDMg9NGoz2ja3dNHa+ta/tk40vCzKhQ/RypCWBMLbmDr6//E24Vv5uPsrqXFozdkAg==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
 
-  react-router@7.18.0:
-    resolution: {integrity: sha512-pTTGt8J+ji1NOmYnjzT+bAJy/1zD+Jp4ziO6cL7T3ZLvXKtusO7BpFqlRXitqpcPVqllsIXFHRMt+2/k3Xn6HQ==}
+  react-router@7.18.1:
+    resolution: {integrity: sha512-GDLgg3i3uM0aeJO3Fm+TCS+sDQ7gu12T6x0qdTEzcwqEfleci7JwugVNIF3U//0FWKnJT7ptG+20B2jfDqnZAg==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -503,20 +503,20 @@ snapshots:
 
   '@inkdropapp/base-ui-theme@0.7.6': {}
 
-  '@inkdropapp/css@0.8.1':
+  '@inkdropapp/css@0.9.0':
     optionalDependencies:
       inkdrop-model: 2.11.5
 
-  '@inkdropapp/theme-dev-helpers@0.6.0':
+  '@inkdropapp/theme-dev-helpers@0.6.1':
     dependencies:
       '@inkdropapp/base-ui-theme': 0.7.6
-      '@inkdropapp/css': 0.8.1
+      '@inkdropapp/css': 0.9.0
       '@vitejs/plugin-react': 6.0.3(vite@8.1.0)
       commander: 15.0.0
       puppeteer: 25.2.1
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-router-dom: 7.18.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-router-dom: 7.18.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       typescript: 6.0.3
       vite: 8.1.0
     transitivePeerDependencies:
@@ -753,13 +753,13 @@ snapshots:
       react: 19.2.7
       scheduler: 0.27.0
 
-  react-router-dom@7.18.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-router-dom@7.18.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-router: 7.18.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-router: 7.18.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  react-router@7.18.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-router@7.18.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       cookie: 1.1.1
       react: 19.2.7
