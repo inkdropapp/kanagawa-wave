@@ -16,7 +16,9 @@
     --editor-foreground-color: hsl(var(--kanagawa-fujiWhite)); /* ui.fg */
     --editor-background-color: hsl(var(--kanagawa-sumiInk3)); /* ui.bg */
     --editor-caret-color: hsl(var(--kanagawa-fujiWhite));
-    --editor-selection-background: hsl(var(--kanagawa-sumiInk5)); /* unfocused */
+    --editor-selection-background: hsl(
+      var(--kanagawa-sumiInk5)
+    ); /* unfocused */
     --editor-focused-selection-background: hsl(
       var(--kanagawa-waveBlue1)
     ); /* ui.bg_visual */
@@ -118,7 +120,8 @@
     --editor-image-widget-backdrop-background-color: hsl(
       var(--kanagawa-sumiInk5) / 40%
     );
-    --editor-image-widget-backdrop-border: 1px solid hsl(var(--kanagawa-sumiInk5));
+    --editor-image-widget-backdrop-border: 1px solid
+      hsl(var(--kanagawa-sumiInk5));
 
     /*── Markdown elements ────────────────────────────────────────────────────*/
     --md-inline-code-padding: 1px;
@@ -254,7 +257,7 @@
     --syntax-heading-5-font-weight: var(--syntax-heading-font-weight);
     --syntax-heading-6-color: var(--syntax-heading-color);
     --syntax-heading-6-font-weight: var(--syntax-heading-font-weight);
-    --syntax-content-separator-color: hsl(var(--kanagawa-sumiInk6));
+    --syntax-content-separator-color: hsl(var(--kanagawa-peachRed));
     --syntax-list-color: hsl(var(--kanagawa-springBlue));
     --syntax-quote-color: hsl(var(--kanagawa-oldWhite));
     --syntax-quote-font-style: italic;
